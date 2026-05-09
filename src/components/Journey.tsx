@@ -1,14 +1,14 @@
 const milestones = [
-  { date: "August 2024", title: "Founded in Uganda", body: "Kardiosense is born in Kampala. We started the project as an IoT device to just capture ecg signals without the having to go to the hospital, just after completing out third year of Biomedical Engineering." },
-  { date: "May 2025", title: "First Conference Presentation", body: "We were invited to present our findings on the model at the 3rd Africa Test and Treat Initiative held in Kampala." },
-  { date: "july 2025", title: "Winners of the HSB Undergraduate Research Grant", body: "We received the HSB Undergraduate Research Grant for our work on the AI cardiac platform." },
-  { date: "August 2025", title: "Second Conference Presentation ", body: "Building on our initial success, we presented our updated model at the International Scientific Conference on NCDs hosted by Gulu University in Gulu, Uganda." },
-  { date: "Late 2025", title: "AI Architecture Designed", body: "We designed the model catering to the unique needs of low-resource settings. Multi-modal model architecture version two was finalized. Clinical datasets acquired and curated: PTB-XL, MIT-BIH, and CODE-15%." },
-  { date: "February 2026", title: "Pre-Seed Funding", body: "Secured pre-seed funding to support the development of the AI cardiac platform from The Engineering Innovation Bootcamp supported by the Royal academy of Engineering (#LIF Community Project)." },
-  { date: "March 2026", title: "App Development Begins", body: "Mobile development underway. Multi-modal fusion engine combines ECG deep learning with clinical risk modeling, all on-device." },
-  { date: "2026", title: "Clinical Validation Underway", body: "Establishing clinical validation partnerships across East Africa. IRB protocols in active development." },
-  { date: "2026", title: "Seed Round & Hospital Partners", body: "Seeking seed funding and pilot partners across Uganda, Kenya and Nigeria to scale early deployments." },
-  { date: "Coming soon", title: "Africa Launch", body: "Rolling out via Community Health Worker networks across sub-Saharan Africa. Then the world." },
+  { date: "August 2024", title: "Founded in Uganda", body: "Kardiosense is born in Kampala. We started the project as an IoT device to capture ECG signals without having to go to the hospital, just after completing our third year of Biomedical Engineering." },
+{ date: "May 2025", title: "First Conference Presentation", body: "We were invited to present our findings on the model at the 3rd Africa Test and Treat Initiative held in Kampala." },
+{ date: "July 2025", title: "Winners of the HSB Undergraduate Research Grant", body: "We received the HSB Undergraduate Research Grant for our work on the AI cardiac platform." },
+{ date: "August 2025", title: "Second Conference Presentation", body: "Building on our initial success, we presented our updated model at the International Scientific Conference on NCDs hosted by Gulu University in Gulu, Uganda." },
+{ date: "Late 2025", title: "AI Architecture Designed", body: "We designed the model catering to the unique needs of low-resource settings. Multi-modal model architecture version two was finalised. Clinical datasets acquired and curated: PTB-XL, MIT-BIH, and CODE-15%." },
+{ date: "February 2026", title: "Pre-Seed Funding", body: "Secured pre-seed funding to support the development of the AI cardiac platform from The Engineering Innovation Bootcamp supported by the Royal Academy of Engineering (#LIF Community Project)." },
+{ date: "March 2026", title: "App Development Begins", body: "Mobile development underway. Multi-modal fusion engine combines ECG deep learning with clinical risk modelling, all on-device." },
+{ date: "2026", title: "Clinical Validation Underway", body: "Establishing clinical validation partnerships across East Africa. IRB protocols in active development." },
+{ date: "2026", title: "Seed Round & Hospital Partners", body: "Seeking seed funding and pilot partners across Uganda, Kenya and Nigeria to scale early deployments." },
+{ date: "Coming Soon", title: "Africa Launch", body: "Rolling out via Community Health Worker networks across sub-Saharan Africa. Then the world." },
 ];
 
 const Journey = () => (
