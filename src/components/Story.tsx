@@ -35,7 +35,7 @@ const Story = () => (
         What started as a pair of engineers has now grown into a rich multidisciplinary team, with clinicians, venture capitalists and researchers, 
         from all over the African continent, to join the mission to help shape technology that is not only intelligent, but clinically meaningfull and human-centred.
         We started in Uganda. We are building for the
-        world.
+        world. 
       </p>
     </Block>
 
