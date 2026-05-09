@@ -5,7 +5,7 @@ const team = [
     name: "Omara Christian Kenneth",
     role: "Founder & CEO",
     bio: "Background in Biomedical Engineering and Machine learning researcher specialising in multi-modal biomedical signal fusion and explainable cardiac AI.",
-    photo: "/images/founders/omara-christian.jpg",
+    photo: "/images/founders/omara-christian.png",
     linkedin: "#",
     twitter: "#",
   },
