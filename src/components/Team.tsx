@@ -38,19 +38,19 @@ const Team = () => (
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-5xl mx-auto">
         {team.map((p) => (
           <div key={p.role} className="reveal text-center">
-            <div className="w-32 h-32 rounded-full mx-auto mb-5 bg-white/10 border border-white/20 overflow-hidden">
-              {p.photo ? (
-                <img
-                  src={p.photo}
-                  alt={p.name}
-                  className="w-full h-full object-cover"
-                />
-              ) : (
-                <div className="w-full h-full flex items-center justify-center">
-                  <span className="font-serif text-3xl text-white/60">KS</span>
-                </div>
-              )}
-            </div>
+           <div className="w-48 h-48 rounded-full mx-auto mb-5 bg-white/10 border-2 border-white/20 overflow-hidden">
+  {p.photo ? (
+    <img
+      src={p.photo}
+      alt={p.name}
+      className="w-full h-full object-cover object-center"
+    />
+  ) : (
+    <div className="w-full h-full flex items-center justify-center">
+      <span className="font-serif text-3xl text-white/60">KS</span>
+    </div>
+  )}
+</div>
             <h3 className="font-serif text-2xl mb-1">{p.name}</h3>
             <p className="text-cyan-accent text-sm uppercase tracking-wider mb-3">{p.role}</p>
             <div className="flex justify-center gap-3 mb-4">
