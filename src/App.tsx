@@ -6,6 +6,8 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from "./pages/Index.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import { Disclaimer, Privacy, Terms } from "./pages/Legal.tsx";
+import Attic2025 from "./pages/news/Attic2025";
+
 
 const queryClient = new QueryClient();
 
@@ -21,6 +23,7 @@ const App = () => (
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/news/attic-2025" element={<Attic2025 />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
