@@ -29,15 +29,15 @@ const posts: Post[] = [
     readTime: "7 min read",
     href: "#",
   },
-  {
-    category: "Press",
-    date: "Jan 18, 2026",
-    title: "Featured in TechCabal: 'The Ugandan startup teaching phones to listen for heart attacks'",
-    excerpt:
-      "TechCabal profiles our origin story, the cardiac care gap across sub-Saharan Africa, and our roadmap for Community Health Worker deployments.",
-    readTime: "5 min read",
-    href: "#",
-  },
+ {
+  category: "Milestone",
+  date: "Jul 2025",
+  title: "Winners of the H&B Global Undergraduate Student Research Grant",
+  excerpt:
+    "Our co-founder Omara Christian Kenneth was named one of the winners of the H&B Global Undergraduate Student Research Grant 2025, recognised for his work on AI-powered cardiac detection in low-resource African healthcare settings.",
+  readTime: "3 min read",
+  href: "/news/hb-grant-2025",
+},
   {
     category: "Milestone",
     date: "Aug 2025",
