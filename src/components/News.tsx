@@ -65,7 +65,7 @@ const News = () => (
             Research, press, and milestones from the Kardiosense team.
           </h2>
         </div>
-        
+        <a
           href="#"
           className="inline-flex items-center gap-2 text-sm font-medium text-teal hover:text-cyan-accent transition-colors"
         >
@@ -98,7 +98,7 @@ const News = () => (
               </h3>
               <p className="text-sm text-muted-foreground leading-relaxed mb-5 flex-1">{p.excerpt}</p>
               {p.href === "#" ? (
-                
+                <a
                   href={p.href}
                   className="inline-flex items-center gap-1.5 text-sm font-medium text-teal group-hover:gap-2.5 transition-all"
                 >
