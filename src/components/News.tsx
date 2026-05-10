@@ -40,6 +40,24 @@ const posts: Post[] = [
   },
   {
     category: "Milestone",
+    date: "Aug 2025",
+    title: "A Stronger Model and a First Partner — Gulu University NCD Conference",
+    excerpt:
+      "We presented a significantly improved CNN-based cardiac detection model at the International Scientific Conference on the NCD Epidemic in Africa, hosted by Gulu University. Accuracy jumped from 73% to 89% — and we met our first external partner.",
+    readTime: "6 min read",
+    href: "/news/gulu-2025",
+  },
+  {
+    category: "Milestone",
+    date: "Jun 2025",
+    title: "Taking Innovation to the National Stage — Science Week 2025",
+    excerpt:
+      "We pitched Kardiosense at National Science Week 2025 at the Kololo Independence Grounds, demonstrating our live ECG dashboard to scientists, investors, and policymakers from across Uganda and beyond.",
+    readTime: "4 min read",
+    href: "/news/science-week-2025",
+  },
+  {
+    category: "Milestone",
     date: "May 28, 2025",
     title: "Presenting AI for Heart Attack Detection at ATTIC 2025",
     excerpt:
