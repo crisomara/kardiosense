@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 type Post = {
   category: "Research" | "Press" | "Milestone";
@@ -37,6 +38,15 @@ const posts: Post[] = [
     readTime: "5 min read",
     href: "#",
   },
+  {
+    category: "Milestone",
+    date: "May 28, 2025",
+    title: "Presenting AI for Heart Attack Detection at ATTIC 2025",
+    excerpt:
+      "Our co-founder Omara Christian Kenneth presented Kardiosense's first ML-based myocardial infarction detection system at the 3rd Africa Test and Treat Initiative Conference in Kampala — the first time the project existed anywhere outside our own heads and laptops.",
+    readTime: "5 min read",
+    href: "/news/attic-2025",
+  },
 ];
 
 const categoryStyles: Record<Post["category"], string> = {
@@ -55,7 +65,7 @@ const News = () => (
             Research, press, and milestones from the Kardiosense team.
           </h2>
         </div>
-        <a
+        
           href="#"
           className="inline-flex items-center gap-2 text-sm font-medium text-teal hover:text-cyan-accent transition-colors"
         >
@@ -87,12 +97,21 @@ const News = () => (
                 {p.title}
               </h3>
               <p className="text-sm text-muted-foreground leading-relaxed mb-5 flex-1">{p.excerpt}</p>
-              <a
-                href={p.href}
-                className="inline-flex items-center gap-1.5 text-sm font-medium text-teal group-hover:gap-2.5 transition-all"
-              >
-                Read more <ArrowRight size={14} />
-              </a>
+              {p.href === "#" ? (
+                
+                  href={p.href}
+                  className="inline-flex items-center gap-1.5 text-sm font-medium text-teal group-hover:gap-2.5 transition-all"
+                >
+                  Read more <ArrowRight size={14} />
+                </a>
+              ) : (
+                <Link
+                  to={p.href}
+                  className="inline-flex items-center gap-1.5 text-sm font-medium text-teal group-hover:gap-2.5 transition-all"
+                >
+                  Read more <ArrowRight size={14} />
+                </Link>
+              )}
             </div>
           </article>
         ))}
