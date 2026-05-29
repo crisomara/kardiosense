@@ -6,7 +6,7 @@ const team = [
     role: "Founder & CEO",
     bio: "Background in Biomedical Engineering and Machine learning researcher specialising in multi-modal biomedical signal fusion and explainable cardiac AI.",
     photo: "/images/founders/omara-christian.png",
-    linkedin: "#",
+    linkedin: "https://www.linkedin.com/in/omara-christian-kenneth?utm_source=share_via&utm_content=profile&utm_medium=member_android"
     twitter: "#",
   },
   {
@@ -14,7 +14,7 @@ const team = [
     role: "Co-Founder & CTO",
     bio: "Mobile and embedded systems engineer building Kardiosense's offline-first architecture for the world's most demanding clinical environments.",
     photo: "/images/founders/ogwal-emmanuel.jpg",
-    linkedin: "#",
+    linkedin: "https://www.linkedin.com/in/emmanuel-ogwal-49b8aa371?utm_source=share_via&utm_content=profile&utm_medium=member_android",
     twitter: "#",
   },
   {
@@ -22,7 +22,7 @@ const team = [
     role: "Co-Founder & Clinical Affairs",
     bio: "Clinician-scientist leading IRB protocols, validation studies and partnerships with African health systems.",
     photo: "/images/founders/dr-patricia-wanjiru.jpg",
-    linkedin: "#",
+    linkedin: "https://www.linkedin.com/in/ciru-kamau?utm_source=share_via&utm_content=profile&utm_medium=member_android",
     twitter: "#",
   },
 ];
