@@ -2,12 +2,12 @@ import { useReveal } from "@/hooks/useReveal";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Problem from "@/components/Problem";
-import WhatIsKardiosense from "@/components/WhatIsKardiosense";
+import Features from "@/components/Features";
 import HowItWorks from "@/components/HowItWorks";
 import WhatMakesDifferent from "@/components/WhatMakesDifferent";
 import WhoWeServe from "@/components/WhoWeServe";
 import ForClinicians from "@/components/ForClinicians";
-import DemoPrototype from "@/components/DemoPrototype";
+import DemoVideo from "@/components/DemoVideo";
 import Story from "@/components/Story";
 import Journey from "@/components/Journey";
 import Team from "@/components/Team";
@@ -24,12 +24,12 @@ const Index = () => {
       <main>
         <Hero />
         <Problem />
-        <WhatIsKardiosense />
+        <Features />
         <HowItWorks />
         <WhatMakesDifferent />
         <WhoWeServe />
         <ForClinicians />
-        <DemoPrototype />
+        <DemoVideo />
         <Story />
         <Journey />
         <Team />

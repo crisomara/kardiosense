@@ -1,16 +1,16 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import Logo from "./Logo";
 
 const links = [
-  { href: "#what-is", label: "What Is" },
+  { href: "#home", label: "Home" },
   { href: "#how", label: "How It Works" },
-  { href: "#serve", label: "Who We Serve" },
   { href: "#clinicians", label: "For Clinicians" },
-  { href: "#demo", label: "Demo" },
+  { href: "#story", label: "Our Story" },
   { href: "#team", label: "Team" },
   { href: "#news", label: "News" },
-  { href: "#faq", label: "FAQs" },
+  { href: "#waitlist", label: "Join Waitlist" },
 ];
 
 const Navbar = () => {
@@ -32,13 +32,9 @@ const Navbar = () => {
     >
       <div className="container mx-auto flex items-center justify-between py-4">
         <Logo />
-        <nav className="hidden lg:flex items-center gap-5">
+        <nav className="hidden lg:flex items-center gap-8">
           {links.map((l) => (
-            <a
-              key={l.href}
-              href={l.href}
-              className="text-sm text-white/85 hover:text-cyan-accent transition-colors"
-            >
+            <a key={l.href} href={l.href} className="text-sm text-white/85 hover:text-cyan-accent transition-colors">
               {l.label}
             </a>
           ))}
