@@ -1,4 +1,5 @@
 import { useState } from "react";
+import type { FormEvent, InputHTMLAttributes, ReactNode } from "react";
 import { z } from "zod";
 
 const schema = z.object({
@@ -15,7 +16,7 @@ const Waitlist = () => {
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const onSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const fd = new FormData(e.currentTarget);
     const data = Object.fromEntries(fd.entries());
@@ -34,15 +35,18 @@ const Waitlist = () => {
         <div className="text-center mb-12 reveal">
           <p className="text-xs uppercase tracking-[0.25em] text-cyan-accent mb-4">Join the Waitlist</p>
           <h2 className="font-serif text-4xl md:text-5xl mb-4">Be among the first heartbeats we listen to.</h2>
-          <p className="text-white/75">Get early access, clinical updates and a front-row seat to Africa's cardiac AI revolution.</p>
+          <p className="text-white/75">
+            Get early access, clinical updates, and a front row seat to Africa's cardiac AI revolution.
+          </p>
         </div>
 
         {submitted ? (
           <div className="reveal text-center rounded-2xl border border-cyan-accent/40 bg-white/5 p-10">
             <div className="font-serif text-3xl text-cyan-accent mb-3">Welcome aboard.</div>
             <p className="text-white/85 leading-relaxed">
-              Thank you for joining our mission. Every name on this list is a heart we're learning to listen
-              for. We'll be in touch as we open access — until then, take care of yours, beat by beat.
+              Thank you for joining our mission. Every name on this list is a heart we are learning
+              to listen for. We will be in touch as we open access. Until then, take care of yours,
+              beat by beat.
             </p>
           </div>
         ) : (
@@ -56,14 +60,24 @@ const Waitlist = () => {
                 <Label>Role</Label>
                 <select name="role" required className="input">
                   <option value="">Select a role</option>
-                  {roles.map((r) => <option key={r} value={r}>{r}</option>)}
+                  {roles.map((r) => (
+                    <option key={r} value={r}>
+                      {r}
+                    </option>
+                  ))}
                 </select>
               </div>
               <Field label="Country" name="country" required />
             </div>
             <div>
               <Label>Message (optional)</Label>
-              <textarea name="message" rows={4} maxLength={1000} className="input resize-none" placeholder="Tell us how Kardiosense fits your work or your hopes..." />
+              <textarea
+                name="message"
+                rows={4}
+                maxLength={1000}
+                className="input resize-none"
+                placeholder="Tell us how KardioSense fits your work or your hopes..."
+              />
             </div>
             {error && <p className="text-sm text-red-300">{error}</p>}
             <button type="submit" className="rounded-full px-7 py-3.5 font-medium gradient-teal text-white hover:opacity-90 transition">
@@ -88,10 +102,16 @@ const Waitlist = () => {
   );
 };
 
-const Label = ({ children }: { children: React.ReactNode }) => (
+const Label = ({ children }: { children: ReactNode }) => (
   <label className="block text-xs uppercase tracking-wider text-white/60 mb-2">{children}</label>
 );
-const Field = ({ label, name, type = "text", required = false }: any) => (
+
+type FieldProps = InputHTMLAttributes<HTMLInputElement> & {
+  label: string;
+  name: string;
+};
+
+const Field = ({ label, name, type = "text", required = false }: FieldProps) => (
   <div>
     <Label>{label}</Label>
     <input className="input" name={name} type={type} required={required} />
