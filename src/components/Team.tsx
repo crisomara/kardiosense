@@ -3,27 +3,24 @@ import { Linkedin, Twitter } from "lucide-react";
 const team = [
   {
     name: "Omara Christian Kenneth",
-    role: "Founder and CEO",
-    bio:
-      "Background in Biomedical Engineering and machine learning research, with a focus on multi modal biomedical signal fusion and explainable cardiac AI.",
+    role: "Founder & CEO",
+    bio: "Background in Biomedical Engineering and Machine learning researcher specialising in multi-modal biomedical signal fusion and explainable cardiac AI.",
     photo: "/images/founders/omara-christian.png",
     linkedin: "#",
     twitter: "#",
   },
   {
     name: "Ogwal Emmanuel",
-    role: "Founding CTO",
-    bio:
-      "Mobile and embedded systems engineer building the offline first KardioSense architecture for demanding clinical environments.",
+    role: "Co-Founder & CTO",
+    bio: "Mobile and embedded systems engineer building Kardiosense's offline-first architecture for the world's most demanding clinical environments.",
     photo: "/images/founders/ogwal-emmanuel.jpg",
     linkedin: "#",
     twitter: "#",
   },
   {
     name: "Dr. Patricia K Wanjiru",
-    role: "Clinical Affairs Lead",
-    bio:
-      "Clinician scientist leading IRB protocols, validation studies, and partnerships with African health systems.",
+    role: "Co-Founder & Clinical Affairs",
+    bio: "Clinician-scientist leading IRB protocols, validation studies and partnerships with African health systems.",
     photo: "/images/founders/dr-patricia-wanjiru.jpg",
     linkedin: "#",
     twitter: "#",
@@ -41,15 +38,19 @@ const Team = () => (
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-5xl mx-auto">
         {team.map((p) => (
           <div key={p.role} className="reveal text-center">
-            <div className="w-48 h-48 rounded-full mx-auto mb-5 bg-white/10 border-2 border-white/20 overflow-hidden">
-              {p.photo ? (
-                <img src={p.photo} alt={p.name} className="w-full h-full object-cover object-center" />
-              ) : (
-                <div className="w-full h-full flex items-center justify-center">
-                  <span className="font-serif text-3xl text-white/60">KS</span>
-                </div>
-              )}
-            </div>
+           <div className="w-48 h-48 rounded-full mx-auto mb-5 bg-white/10 border-2 border-white/20 overflow-hidden">
+  {p.photo ? (
+    <img
+      src={p.photo}
+      alt={p.name}
+      className="w-full h-full object-cover object-center"
+    />
+  ) : (
+    <div className="w-full h-full flex items-center justify-center">
+      <span className="font-serif text-3xl text-white/60">KS</span>
+    </div>
+  )}
+</div>
             <h3 className="font-serif text-2xl mb-1">{p.name}</h3>
             <p className="text-cyan-accent text-sm uppercase tracking-wider mb-3">{p.role}</p>
             <div className="flex justify-center gap-3 mb-4">
@@ -66,7 +67,7 @@ const Team = () => (
       </div>
 
       <div className="mt-24 reveal">
-        <p className="text-center text-xs uppercase tracking-[0.25em] text-white/70 mb-8">Partners and Supporters</p>
+        <p className="text-center text-xs uppercase tracking-[0.25em] text-white/70 mb-8">Partners & Supporters</p>
         <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-6 opacity-80">
           {[1, 2, 3, 4, 5].map((i) => (
             <div key={i} className="h-10 w-32 rounded bg-white/10 border border-white/20 flex items-center justify-center text-xs text-white/60">

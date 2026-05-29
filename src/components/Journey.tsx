@@ -1,64 +1,14 @@
 const milestones = [
-  {
-    date: "August 2024",
-    title: "Founded in Uganda",
-    body:
-      "KardioSense is born in Kampala. We started the project as an IoT device to capture ECG signals without requiring a hospital visit, just after completing our third year of Biomedical Engineering.",
-  },
-  {
-    date: "May 2025",
-    title: "First Conference Presentation",
-    body:
-      "We were invited to present our findings on the model at the 3rd Africa Test and Treat Initiative held in Kampala.",
-  },
-  {
-    date: "July 2025",
-    title: "Winners of the HSB Undergraduate Research Grant",
-    body:
-      "We received the HSB Undergraduate Research Grant for our work on the AI cardiac platform.",
-  },
-  {
-    date: "August 2025",
-    title: "Second Conference Presentation",
-    body:
-      "Building on our initial success, we presented our updated model at the International Scientific Conference on NCDs hosted by Gulu University in Gulu, Uganda.",
-  },
-  {
-    date: "Late 2025",
-    title: "AI Architecture Designed",
-    body:
-      "We designed the model around the needs of low resource settings. Multi modal model architecture version two was finalised. Clinical datasets were acquired and curated: PTB XL, MIT BIH, and CODE 15%.",
-  },
-  {
-    date: "February 2026",
-    title: "Pre Seed Funding",
-    body:
-      "We secured pre seed funding to support development of the AI cardiac platform from The Engineering Innovation Bootcamp, supported by the Royal Academy of Engineering and the LIF Community Project.",
-  },
-  {
-    date: "March 2026",
-    title: "App Development Begins",
-    body:
-      "Mobile development began. The multi modal fusion engine combines ECG deep learning with clinical risk modelling, all on device.",
-  },
-  {
-    date: "2026",
-    title: "Clinical Validation Underway",
-    body:
-      "We are establishing clinical validation partnerships across East Africa. IRB protocols are in active development.",
-  },
-  {
-    date: "2026",
-    title: "Seed Round and Hospital Partners",
-    body:
-      "We are seeking seed funding and pilot partners across Uganda, Kenya, and Nigeria to scale early deployments.",
-  },
-  {
-    date: "Coming Soon",
-    title: "Africa Launch",
-    body:
-      "We plan to roll out through community health worker networks across sub Saharan Africa, then continue building for the world.",
-  },
+  { date: "August 2024", title: "Founded in Uganda", body: "Kardiosense is born in Kampala. We started the project as an IoT device to capture ECG signals without having to go to the hospital, just after completing our third year of Biomedical Engineering." },
+{ date: "May 2025", title: "First Conference Presentation", body: "We were invited to present our findings on the model at the 3rd Africa Test and Treat Initiative held in Kampala." },
+{ date: "July 2025", title: "Winners of the HSB Undergraduate Research Grant", body: "We received the HSB Undergraduate Research Grant for our work on the AI cardiac platform." },
+{ date: "August 2025", title: "Second Conference Presentation", body: "Building on our initial success, we presented our updated model at the International Scientific Conference on NCDs hosted by Gulu University in Gulu, Uganda." },
+{ date: "Late 2025", title: "AI Architecture Designed", body: "We designed the model catering to the unique needs of low-resource settings. Multi-modal model architecture version two was finalised. Clinical datasets acquired and curated: PTB-XL, MIT-BIH, and CODE-15%." },
+{ date: "February 2026", title: "Pre-Seed Funding", body: "Secured pre-seed funding to support the development of the AI cardiac platform from The Engineering Innovation Bootcamp supported by the Royal Academy of Engineering (#LIF Community Project)." },
+{ date: "March 2026", title: "App Development Begins", body: "Mobile development underway. Multi-modal fusion engine combines ECG deep learning with clinical risk modelling, all on-device." },
+{ date: "2026", title: "Clinical Validation Underway", body: "Establishing clinical validation partnerships across East Africa. IRB protocols in active development." },
+{ date: "2026", title: "Seed Round & Hospital Partners", body: "Seeking seed funding and pilot partners across Uganda, Kenya and Nigeria to scale early deployments." },
+{ date: "Coming Soon", title: "Africa Launch", body: "Rolling out via Community Health Worker networks across sub-Saharan Africa. Then the world." },
 ];
 
 const Journey = () => (
@@ -74,9 +24,9 @@ const Journey = () => (
         {milestones.map((m, i) => {
           const left = i % 2 === 0;
           return (
-            <div key={m.title} className="relative md:grid md:grid-cols-2 mb-16 reveal">
+            <div key={i} className="relative md:grid md:grid-cols-2 mb-16 reveal">
               <span className="absolute left-4 md:left-1/2 top-2 -translate-x-1/2 w-4 h-4 rounded-full border-2 border-cyan-accent bg-near-black" />
-              <div className={`pl-12 md:pl-0 ${left ? "md:pr-12 md:text-right" : "md:col-start-2 md:pl-12"}`}>
+              <div className={`pl-12 md:pl-0 ${left ? 'md:pr-12 md:text-right' : 'md:col-start-2 md:pl-12'}`}>
                 <div className="font-serif text-cyan-accent text-2xl mb-1">{m.date}</div>
                 <div className="font-semibold text-xl mb-3">{m.title}</div>
                 <p className="text-white/75 leading-relaxed text-justify md:text-justify">{m.body}</p>

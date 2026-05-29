@@ -90,3 +90,9 @@
 }
 .reveal { opacity: 0; }
 .reveal.in-view { animation: fade-up 0.8s ease-out forwards; }
+
+@layer utilities {
+  .shadow-elevated { box-shadow: 0 30px 60px -20px hsl(var(--navy) / 0.45), 0 10px 20px -10px hsl(var(--near-black) / 0.25); }
+  .animate-fade-up { animation: fade-up 0.9s ease-out forwards; }
+  .bg-navy-deep { background-color: hsl(203 80% 8%); }
+}
