@@ -13,12 +13,12 @@ type Post = {
 const posts: Post[] = [
   {
     category: "Milestone",
-    date: "Mar 12, 2026",
-    title: "Kardiosense secures first clinical validation partner in Kampala",
+    date: "May 31, 2026",
+    title: "Kardiosense receives seed funding at Engineering Innovation Bootcamp",
     excerpt:
-      "We are partnering with the Uganda Heart Institute to begin prospective validation of our multi-modal MI risk model across 1,200 patients.",
-    readTime: "4 min read",
-    href: "#",
+      "At the Engineering Innovation Bootcamp grand finale, supported by the Royal Academy of Engineering LIF Community Project, Kardiosense joined student engineers taking the stage as founders and received seed funding to keep refining the solution.",
+    readTime: "5 min read",
+    href: "/news/lif-bootcamp-2026",
   },
   {
     category: "Research",
@@ -29,15 +29,15 @@ const posts: Post[] = [
     readTime: "7 min read",
     href: "#",
   },
- {
-  category: "Milestone",
-  date: "Jul 2025",
-  title: "Winners of the H&B Global Undergraduate Student Research Grant",
-  excerpt:
-    "Our co-founder Omara Christian Kenneth was named one of the winners of the H&B Global Undergraduate Student Research Grant 2025, recognised for his work on AI-powered cardiac detection in low-resource African healthcare settings.",
-  readTime: "3 min read",
-  href: "/news/hb-grant-2025",
-},
+  {
+    category: "Milestone",
+    date: "Jul 2025",
+    title: "Winners of the H&B Global Undergraduate Student Research Grant",
+    excerpt:
+      "Our co-founder Omara Christian Kenneth was named one of the winners of the H&B Global Undergraduate Student Research Grant 2025, recognised for his work on AI-powered cardiac detection in low-resource African healthcare settings.",
+    readTime: "3 min read",
+    href: "/news/hb-grant-2025",
+  },
   {
     category: "Milestone",
     date: "Aug 2025",
@@ -108,7 +108,7 @@ const News = () => (
             <div className="p-6 flex flex-col flex-1">
               <div className="flex items-center gap-3 text-xs text-muted-foreground mb-3">
                 <time>{p.date}</time>
-                <span className="opacity-40">·</span>
+                <span className="opacity-40">/</span>
                 <span>{p.readTime}</span>
               </div>
               <h3 className="font-serif text-xl text-navy leading-snug mb-3 group-hover:text-teal transition-colors">

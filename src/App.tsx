@@ -10,6 +10,7 @@ import Attic2025 from "./pages/news/Attic2025";
 import ScienceWeek2025 from "./pages/news/ScienceWeek2025";
 import Gulu2025 from "./pages/news/Gulu2025";
 import HBGrant2025 from "./pages/news/HBGrant2025";
+import LifBootcamp2026 from "./pages/news/LifBootcamp2026";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/news/science-week-2025" element={<ScienceWeek2025 />} />
           <Route path="/news/gulu-2025" element={<Gulu2025 />} />
           <Route path="/news/hb-grant-2025" element={<HBGrant2025 />} />
+          <Route path="/news/lif-bootcamp-2026" element={<LifBootcamp2026 />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

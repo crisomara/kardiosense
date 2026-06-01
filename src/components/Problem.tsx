@@ -1,5 +1,28 @@
 import listenImg from "@/assets/clinician-listen.jpg";
 
+const stats = [
+  {
+    value: "17.9M",
+    label: "people die from cardiovascular disease globally each year",
+    percentage: 72,
+  },
+  {
+    value: "1.5M+",
+    label: "cardiovascular deaths occur each year in sub-Saharan Africa",
+    percentage: 54,
+  },
+  {
+    value: "75%+",
+    label: "of CVD deaths take place in low and middle income countries",
+    percentage: 78,
+  },
+  {
+    value: "4 in 5",
+    label: "CVD deaths are caused by heart attacks and strokes",
+    percentage: 82,
+  },
+];
+
 const Problem = () => {
   return (
     <section className="bg-near-black text-white py-28 relative overflow-hidden">
@@ -41,7 +64,7 @@ const Problem = () => {
           </p>
           <p>
             More than{" "}
-            <span className="text-cyan-accent font-medium">90 percent of cardiovascular events</span>{" "}
+            <span className="text-cyan-accent font-medium">three quarters of CVD deaths</span>{" "}
             happen in low and middle income countries. Yet most diagnostic platforms assume reliable
             electricity, stable internet, expensive cardiology suites, and specialists in walking
             distance. The rural clinic in Mbale and the community health worker in Kisumu rarely
@@ -51,6 +74,29 @@ const Problem = () => {
             Kardiosense was born inside that gap. Not as a replacement for cardiologists, but as
             infrastructure that quietly extends their reach.
           </p>
+
+          <div className="grid sm:grid-cols-2 gap-4 pt-4">
+            {stats.map((stat) => (
+              <div
+                key={stat.value}
+                className="rounded-2xl border border-white/10 bg-white/[0.06] p-5 shadow-elevated"
+              >
+                <div className="flex items-end justify-between gap-4 mb-3">
+                  <span className="font-serif text-4xl text-cyan-accent">{stat.value}</span>
+                  <span className="h-16 w-16 rounded-full border border-cyan-accent/25 bg-cyan-accent/10 grid place-items-center">
+                    <span className="h-9 w-9 rounded-full bg-cyan-accent/70" />
+                  </span>
+                </div>
+                <p className="text-sm leading-relaxed text-white/75 mb-4">{stat.label}</p>
+                <div className="h-2 rounded-full bg-white/10 overflow-hidden" aria-hidden="true">
+                  <div
+                    className="h-full rounded-full gradient-teal"
+                    style={{ width: `${stat.percentage}%` }}
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
