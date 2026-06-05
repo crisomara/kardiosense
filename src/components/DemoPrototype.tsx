@@ -43,9 +43,9 @@ const DemoPrototype = () => (
         <div className="absolute bottom-6 left-6 right-6 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <p className="font-serif text-2xl">KardioSense prototype walkthrough</p>
-            <p className="text-sm text-white/70">Video placeholder for the first product demo</p>
+            <p className="text-sm text-white/70">Product demo video coming soon</p>
           </div>
-          <span className="text-xs uppercase tracking-widest text-white/60">00:00</span>
+          <span className="text-xs uppercase tracking-widest text-white/60">Demo</span>
         </div>
       </div>
     </div>

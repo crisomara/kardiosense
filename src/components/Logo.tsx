@@ -6,9 +6,9 @@ const Logo = ({ light = true }: { light?: boolean }) => (
     <img
       src={logoMark}
       alt="Kardiosense logo"
-      width={36}
-      height={36}
-      className="h-9 w-9 object-contain"
+      width={40}
+      height={40}
+      className="h-10 w-10 object-contain"
     />
     <span className={`font-semibold tracking-tight text-lg ${light ? 'text-white' : 'text-near-black'}`}>
       Kardio<span className="text-cyan-accent">sense</span>

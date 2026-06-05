@@ -1,7 +1,7 @@
 import { Play } from "lucide-react";
 
 const POSTER =
-  "https://images.unsplash.com/photo-1551601651-2a8555f1a136?auto=format&fit=crop&w=1800&q=80";
+  "/images/clinician-listen.jpg";
 
 const DemoVideo = () => {
   return (
@@ -15,8 +15,7 @@ const DemoVideo = () => {
             From chest strap to clinician report, in under a minute.
           </h2>
           <p className="mt-4 text-white/70 leading-relaxed">
-            A short walk through of the current Kardiosense prototype. The video below is a
-            placeholder while we record the field footage with our clinical partners.
+            A short walk through of the current Kardiosense prototype. Field footage with our clinical partners coming soon.
           </p>
         </div>
         <div className="relative aspect-video rounded-3xl overflow-hidden border border-white/10 shadow-elevated group reveal">
@@ -42,7 +41,7 @@ const DemoVideo = () => {
               <p className="font-serif text-2xl">Kardiosense prototype</p>
               <p className="text-sm text-white/70">Field walkthrough coming soon</p>
             </div>
-            <span className="text-xs uppercase tracking-widest text-white/60">Placeholder</span>
+            <span className="text-xs uppercase tracking-widest text-white/60">Demo</span>
           </div>
         </div>
       </div>

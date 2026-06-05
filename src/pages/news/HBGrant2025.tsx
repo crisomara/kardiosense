@@ -37,7 +37,7 @@ const HBGrant2025 = () => (
     <div className="container mx-auto px-4 max-w-3xl mb-12">
       <div className="max-w-sm mx-auto rounded-2xl overflow-hidden border border-border shadow-lg">
         <img
-          src="/images/news/hb-grant-2025/winners.jpg"
+          src="/images/hsb-grant-2025/winners.jpg"
           alt="H&B Challenge Winners — Undergraduate Student Research 2025"
           className="w-full h-full object-cover object-center"
           onError={(e) => {
