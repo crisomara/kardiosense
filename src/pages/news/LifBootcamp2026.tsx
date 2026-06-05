@@ -52,6 +52,21 @@ const LifBootcamp2026 = () => (
         renewed momentum.
       </p>
 
+      {/* Finalists photo */}
+      <div className="container mx-auto px-4 max-w-3xl mb-10">
+        <div className="w-full aspect-[16/9] rounded-2xl overflow-hidden bg-teal/10 border border-border">
+          <img
+            src="/images/news/bootcamp-2026/finalists.jpg"
+            alt="Engineering Innovation Bootcamp 2026 finalists"
+            className="w-full h-full object-cover object-center"
+            loading="lazy"
+          />
+        </div>
+        <p className="text-xs text-muted-foreground mt-2 text-center">
+          Bootcamp finalists on stage at the Engineering Innovation Bootcamp grand finale.
+        </p>
+      </div>
+
       <section className="mb-10 space-y-5 text-base text-navy/75 leading-relaxed">
         <p>
           We are especially grateful for the seed funding provided through the bootcamp and for the
@@ -97,6 +112,26 @@ const LifBootcamp2026 = () => (
           ideas, sharpened our communication, and reminded us of the power of persistence.
         </p>
       </section>
+
+      {/* Additional bootcamp photos */}
+      <div className="grid md:grid-cols-2 gap-6 mb-10">
+        <div className="rounded-2xl overflow-hidden border border-border bg-teal/10">
+          <img
+            src="/images/news/bootcamp-2026/bootcamp-3.jpg"
+            alt="Engineering Innovation Bootcamp 2026"
+            className="w-full h-64 object-cover"
+            loading="lazy"
+          />
+        </div>
+        <div className="rounded-2xl overflow-hidden border border-border bg-teal/10">
+          <img
+            src="/images/news/bootcamp-2026/bootcamp-4-clear.jpg"
+            alt="Engineering Innovation Bootcamp 2026 grand finale"
+            className="w-full h-64 object-cover"
+            loading="lazy"
+          />
+        </div>
+      </div>
 
       <blockquote className="border-l-4 border-cyan-accent bg-teal/5 px-6 py-5 font-serif text-2xl text-navy leading-snug">
         Innovation is not about being the best today, but about building the courage to keep creating

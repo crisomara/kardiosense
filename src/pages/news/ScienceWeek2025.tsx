@@ -44,11 +44,7 @@ const ScienceWeek2025 = () => (
           src="/images/news/science-week-2025/stage-photo-1.jpg"
           alt="Omara Christian Kenneth presenting at National Science Week 2025"
           className="w-full h-full object-cover object-center"
-          onError={(e) => {
-            e.target.style.display = "none";
-            e.target.parentElement.classList.add("flex", "items-center", "justify-center");
-            e.target.parentElement.innerHTML = `<span class="text-sm text-muted-foreground">Photo coming soon</span>`;
-          }}
+          loading="lazy"
         />
       </div>
       <p className="text-xs text-muted-foreground mt-2 text-center">
@@ -91,24 +87,28 @@ const ScienceWeek2025 = () => (
         </p>
       </section>
 
-      {/* Second stage photo */}
-      <div className="my-10">
-        <div className="w-full aspect-[16/9] rounded-2xl overflow-hidden bg-teal/10 border border-border">
+      {/* Additional stage photos */}
+      <div className="grid md:grid-cols-2 gap-6 my-10">
+        <div className="rounded-2xl overflow-hidden border border-border bg-teal/10">
           <img
             src="/images/news/science-week-2025/stage-photo-2.jpg"
             alt="Kardiosense team pitching at National Science Week 2025"
-            className="w-full h-full object-cover object-center"
-            onError={(e) => {
-              e.target.style.display = "none";
-              e.target.parentElement.classList.add("flex", "items-center", "justify-center");
-              e.target.parentElement.innerHTML = `<span class="text-sm text-muted-foreground">Photo coming soon</span>`;
-            }}
+            className="w-full h-56 object-cover object-center"
+            loading="lazy"
           />
         </div>
-        <p className="text-xs text-muted-foreground mt-2 text-center">
-          The Kardiosense team during the live pitch demonstration.
-        </p>
+        <div className="rounded-2xl overflow-hidden border border-border bg-teal/10">
+          <img
+            src="/images/news/science-week-2025/stage-photo-3.jpg"
+            alt="Kardiosense at National Science Week 2025"
+            className="w-full h-56 object-cover object-center"
+            loading="lazy"
+          />
+        </div>
       </div>
+      <p className="text-xs text-muted-foreground mb-10 text-center">
+        The Kardiosense team during the live pitch demonstration at National Science Week 2025.
+      </p>
 
       {/* The recognition */}
       <section className="mb-10">
@@ -133,22 +133,18 @@ const ScienceWeek2025 = () => (
         </a>
       </section>
 
-      {/* Poster photo */}
+      {/* Science Week photo 4 */}
       <div className="my-10">
-        <div className="w-full max-w-sm mx-auto rounded-2xl overflow-hidden border border-border bg-teal/10">
+        <div className="w-full aspect-[16/9] rounded-2xl overflow-hidden border border-border bg-teal/10">
           <img
-            src="/images/news/science-week-2025/poster.jpg"
-            alt="Kardiosense exhibition poster at National Science Week 2025"
+            src="/images/news/science-week-2025/stage-photo-4.jpg"
+            alt="Kardiosense at National Science Week 2025 exhibition"
             className="w-full h-full object-cover object-center"
-            onError={(e) => {
-              e.target.style.display = "none";
-              e.target.parentElement.classList.add("flex", "items-center", "justify-center", "h-48");
-              e.target.parentElement.innerHTML = `<span class="text-sm text-muted-foreground p-6 text-center">Exhibition poster — coming soon</span>`;
-            }}
+            loading="lazy"
           />
         </div>
         <p className="text-xs text-muted-foreground mt-2 text-center">
-          Our exhibition poster at National Science Week 2025.
+          At the National Science Week 2025 exhibition grounds, Kololo Independence Grounds.
         </p>
       </div>
 

@@ -8,6 +8,7 @@ type Post = {
   excerpt: string;
   readTime: string;
   href: string;
+  image?: string;
 };
 
 const posts: Post[] = [
@@ -19,6 +20,7 @@ const posts: Post[] = [
       "At the Engineering Innovation Bootcamp grand finale, supported by the Royal Academy of Engineering LIF Community Project, Kardiosense joined student engineers taking the stage as founders and received seed funding to keep refining the solution.",
     readTime: "5 min read",
     href: "/news/lif-bootcamp-2026",
+    image: "/images/news/bootcamp-2026/finalists.jpg",
   },
   {
     category: "Research",
@@ -37,6 +39,7 @@ const posts: Post[] = [
       "Our co-founder Omara Christian Kenneth was named one of the winners of the H&B Global Undergraduate Student Research Grant 2025, recognised for his work on AI-powered cardiac detection in low-resource African healthcare settings.",
     readTime: "3 min read",
     href: "/news/hb-grant-2025",
+    image: "/images/hsb-grant-2025/winners.jpg",
   },
   {
     category: "Milestone",
@@ -46,6 +49,7 @@ const posts: Post[] = [
       "We presented a significantly improved CNN-based cardiac detection model at the International Scientific Conference on the NCD Epidemic in Africa, hosted by Gulu University. Accuracy jumped from 73 percent to 89 percent, and we met our first external partner.",
     readTime: "6 min read",
     href: "/news/gulu-2025",
+    image: "/images/news/gulu-2025/ncd-conference-1.jpg",
   },
   {
     category: "Milestone",
@@ -55,6 +59,7 @@ const posts: Post[] = [
       "We pitched Kardiosense at National Science Week 2025 at the Kololo Independence Grounds, demonstrating our live ECG dashboard to scientists, investors, and policymakers from across Uganda and beyond.",
     readTime: "4 min read",
     href: "/news/science-week-2025",
+    image: "/images/news/science-week-2025/stage-photo-1.jpg",
   },
   {
     category: "Milestone",
@@ -97,8 +102,18 @@ const News = () => (
             key={p.title}
             className="group reveal flex flex-col rounded-2xl border border-border bg-card overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
           >
-            <div className="relative h-44 gradient-teal overflow-hidden">
-              <div className="absolute inset-0 opacity-20 [background-image:radial-gradient(circle_at_30%_30%,white,transparent_60%)]" />
+            <div className="relative h-48 overflow-hidden bg-teal/10">
+              {p.image ? (
+                <img
+                  src={p.image}
+                  alt={p.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                />
+              ) : (
+                <div className="w-full h-full gradient-teal" />
+              )}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
               <span
                 className={`absolute top-4 left-4 inline-flex items-center rounded-full border px-3 py-1 text-xs font-medium bg-white ${categoryStyles[p.category]}`}
               >
